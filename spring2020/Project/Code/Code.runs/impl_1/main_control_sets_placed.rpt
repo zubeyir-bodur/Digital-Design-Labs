@@ -1,0 +1,105 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu May 21 11:41:18 2020
+| Host         : asus running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    20 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              84 |           26 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             163 |           67 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              61 |           14 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+------------------------------------------+----------------------+------------------+----------------+
+|           Clock Signal          |               Enable Signal              |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++---------------------------------+------------------------------------------+----------------------+------------------+----------------+
+|  slow_clk_BUFG                  | displayLogic/r_a_1_ld                    |                      |                2 |              4 |
+|  controller1/i_clr_reg_i_1_n_0  |                                          |                      |                2 |              5 |
+|  slow_clk_BUFG                  | displayLogic/E[0]                        |                      |                8 |              8 |
+|  slow_clk_BUFG                  | controller1/FSM_onehot_state_reg[2]_0[0] |                      |                8 |              8 |
+|  slow_clk_BUFG                  | controller1/FSM_onehot_state_reg[4]_0[0] | controller1/SR[0]    |                1 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_0[0]                 |                      |                2 |              8 |
+|  slow_clk_BUFG                  | dbncer1/E[0]                             |                      |                3 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_1[0]                 |                      |                3 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_10[0]                |                      |                4 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_7[0]                 |                      |                5 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_14[0]                |                      |                1 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_12[0]                |                      |                5 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_11[0]                |                      |                5 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_8[0]                 |                      |                2 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_5[0]                 |                      |                3 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_3[0]                 |                      |                1 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_13[0]                |                      |                3 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_4[0]                 |                      |                1 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_6[0]                 |                      |                3 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_9[0]                 |                      |                1 |              8 |
+|  slow_clk_BUFG                  | dbncer1/q_0_d_1_reg_2[0]                 |                      |                1 |              8 |
+|  displayLogic/r_e_1_reg_i_2_n_0 |                                          |                      |                3 |              9 |
+|  slow_clk_BUFG                  | displayLogic/in_ld                       |                      |                6 |             15 |
+|  slow_clk_BUFG                  |                                          |                      |                8 |             20 |
+|  slow_clk_BUFG                  | controller1/E[0]                         | controller1/SR[0]    |                5 |             21 |
+|  slow_clk_BUFG                  | displayLogic/ten_ld                      | displayLogic/ten_clr |                8 |             32 |
+|  clk_IBUF_BUFG                  |                                          |                      |               13 |             50 |
++---------------------------------+------------------------------------------+----------------------+------------------+----------------+
+
+

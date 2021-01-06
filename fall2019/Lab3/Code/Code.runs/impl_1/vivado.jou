@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov  4 20:50:15 2019
+# Process ID: 7580
+# Current directory: D:/xilinx/xup/Lab-03/Lab-03.runs/impl_1
+# Command line: vivado.exe -log functionFBasys.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source functionFBasys.tcl -notrace
+# Log file: D:/xilinx/xup/Lab-03/Lab-03.runs/impl_1/functionFBasys.vdi
+# Journal file: D:/xilinx/xup/Lab-03/Lab-03.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source functionFBasys.tcl -notrace

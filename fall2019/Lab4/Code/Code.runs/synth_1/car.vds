@@ -1,0 +1,494 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 19 12:20:21 2019
+# Process ID: 12736
+# Current directory: D:/xilinx/xup/Lab04/Lab04.runs/synth_1
+# Command line: vivado.exe -log car.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source car.tcl
+# Log file: D:/xilinx/xup/Lab04/Lab04.runs/synth_1/car.vds
+# Journal file: D:/xilinx/xup/Lab04/Lab04.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source car.tcl -notrace
+Command: synth_design -top car -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11476 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 699.926 ; gain = 178.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'car' [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:107]
+INFO: [Synth 8-6157] synthesizing module 'clkDivider' [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:61]
+INFO: [Synth 8-6155] done synthesizing module 'clkDivider' (1#1) [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:61]
+INFO: [Synth 8-6157] synthesizing module 'driverFSM' [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'sNext' [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'sNext' (2#1) [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'TwoBitRegister' [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'TwoBitRegister' (3#1) [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'driverFSM' (4#1) [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/SevSeg_4digit.sv:10]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (5#1) [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/SevSeg_4digit.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'car' (6#1) [D:/xilinx/xup/Lab04/Lab04.srcs/sources_1/new/Lab04.sv:107]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 763.484 ; gain = 241.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 763.484 ; gain = 241.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 763.484 ; gain = 241.559
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/xilinx/xup/Lab04/Lab04.srcs/constrs_1/imports/Lab related docs/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/car_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/car_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 858.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 858.215 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 858.215 ; gain = 336.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 858.215 ; gain = 336.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 858.215 ; gain = 336.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 858.215 ; gain = 336.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clkDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+Module sNext 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module TwoBitRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module driverFSM 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module SevSeg_4digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design car has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 858.215 ; gain = 336.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 858.215 ; gain = 336.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 877.746 ; gain = 355.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 877.746 ; gain = 355.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 885.293 ; gain = 363.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 885.293 ; gain = 363.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 885.293 ; gain = 363.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 885.293 ; gain = 363.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 885.293 ; gain = 363.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 885.293 ; gain = 363.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    15|
+|4     |LUT2   |    45|
+|5     |LUT3   |    22|
+|6     |LUT4   |    23|
+|7     |LUT5   |     1|
+|8     |LUT6   |    14|
+|9     |FDCE   |    35|
+|10    |FDRE   |    18|
+|11    |IBUF   |     6|
+|12    |OBUF   |    23|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+---------------+------+
+|      |Instance           |Module         |Cells |
++------+-------------------+---------------+------+
+|1     |top                |               |   227|
+|2     |  divide           |clkDivider     |   157|
+|3     |  driver           |driverFSM      |     7|
+|4     |    nextStateLogic |sNext          |     2|
+|5     |    register       |TwoBitRegister |     3|
+|6     |  speed            |SevSeg_4digit  |    33|
++------+-------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 885.293 ; gain = 363.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 885.293 ; gain = 268.637
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 885.293 ; gain = 363.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 59 Warnings, 58 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 901.473 ; gain = 610.496
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.473 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx/xup/Lab04/Lab04.runs/synth_1/car.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file car_utilization_synth.rpt -pb car_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 12:21:08 2019...

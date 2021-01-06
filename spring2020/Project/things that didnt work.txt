@@ -1,0 +1,33 @@
+1-) CLOCK DIVIDER
+I used a clock divider in my seven segment module. This was based on the idea
+of seperating 2 msb of an 18 bit counter, and using these bits as displaying
+one digit in the display. For example, if the counters 2 msb was 00, rightmost
+digit would be displayed; if it was 11, it would be the rightmost bit. If this
+counter was 18 bits, we would divide the clock signal by 2^18, hence we would
+have ~1500 Hz display, fast enough for human eye and slow enough for system .
+
+When I gave 100MHz clock signal to my whole project (which I shouldn't
+because the delay of the project was reported to be ~10ns) it was fine, except
+that I had the 2nd and 3rd problem below.
+
+I was doing this until I realized my mistake in my clock divider module for OTHER
+modules, which used a down counter. I was taking the divide amount D as an output
+to divider.
+
+Then I changed it. Finally, i was able to use 20MHz for my computations, about 1500Hz
+for the view and same 20MHz for my controller (the button debouncer). In theory, i should be able to get clean
+pulses from my button debouncer
+
+I was using wrong nextstate logic in my project. Using multiplexers instead of multiple line else if statements
+solved this problem.
+
+.....
+
+Solved. In order to solve this, I gave clock signals of 10ns period in the simulation so that i can
+imitate 100MHz clk of the FPGA. I also made 4 digits in the seven segment signals (in3-0) output of my
+main module so that i can sort of see the display without having to generate bitstream.
+
+I also tested my other modules before writing a testbench for this module.
+
+Currently, i can't initilaize the memory with 0, 1, ..., e, f in FPGA. However, this doesn't happen
+in the simulation. Picture to be inserted.

@@ -1,0 +1,542 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 21 11:37:55 2020
+# Process ID: 4284
+# Current directory: D:/xilinx/xup/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: D:/xilinx/xup/project_1/project_1.runs/synth_1/main.vds
+# Journal file: D:/xilinx/xup/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17032 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 701.977 ; gain = 177.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:423]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:106]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'downCounter' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:89]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'register' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:63]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:63]
+INFO: [Synth 8-6155] done synthesizing module 'downCounter' (2#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:89]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider' (3#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:106]
+INFO: [Synth 8-6157] synthesizing module 'buttonDebouncer' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:137]
+INFO: [Synth 8-6155] done synthesizing module 'buttonDebouncer' (4#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:137]
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:184]
+WARNING: [Synth 8-87] always_comb on 'i_clr_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:203]
+WARNING: [Synth 8-87] always_comb on 'i_ld_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:203]
+WARNING: [Synth 8-87] always_comb on 'sum_clr_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:204]
+WARNING: [Synth 8-87] always_comb on 'sum_ld_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:204]
+WARNING: [Synth 8-87] always_comb on 'checksum_clr_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:205]
+WARNING: [Synth 8-87] always_comb on 'checksum_ld_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:205]
+WARNING: [Synth 8-87] always_comb on 'ctr_clr_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:206]
+WARNING: [Synth 8-87] always_comb on 'ctr_ld_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:206]
+WARNING: [Synth 8-87] always_comb on 'r_e_0_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:207]
+WARNING: [Synth 8-87] always_comb on 'over_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:207]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (5#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:184]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:155]
+INFO: [Synth 8-6157] synthesizing module 'upCounter' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:76]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized0' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:63]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized0' (5#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:63]
+INFO: [Synth 8-6155] done synthesizing module 'upCounter' (6#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:76]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized1' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:63]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized1' (6#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:63]
+INFO: [Synth 8-6157] synthesizing module 'upCounter__parameterized0' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:76]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'upCounter__parameterized0' (6#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:76]
+WARNING: [Synth 8-7023] instance 'ctr1' of module 'upCounter' has 5 connections declared, but only 4 given [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:180]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (7#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:155]
+INFO: [Synth 8-6157] synthesizing module 'regFile' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:4]
+INFO: [Synth 8-226] default block is never used [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'regFile' (8#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/SevSeg_4digit.sv:11]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/SevSeg_4digit.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (9#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/SevSeg_4digit.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'sevenSegmentLogic' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:261]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized2' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:63]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized2' (9#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:63]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:49]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:39]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (10#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (11#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:49]
+WARNING: [Synth 8-689] width (32) of port connection 'I2' does not match port width (4) of module 'mux4' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:298]
+WARNING: [Synth 8-689] width (32) of port connection 'I1' does not match port width (4) of module 'mux4' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:298]
+INFO: [Synth 8-6157] synthesizing module 'mux4__parameterized0' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:49]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:39]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (11#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'mux4__parameterized0' (11#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'upCounter__parameterized1' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:76]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'upCounter__parameterized1' (11#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:76]
+WARNING: [Synth 8-87] always_comb on 'r_a_1_ld_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:292]
+WARNING: [Synth 8-87] always_comb on 'r_e_1_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:321]
+WARNING: [Synth 8-87] always_comb on 'ten_clr_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:309]
+WARNING: [Synth 8-87] always_comb on 'ten_ld_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:309]
+WARNING: [Synth 8-87] always_comb on 'in_ld_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:287]
+WARNING: [Synth 8-87] always_comb on 'in_sel_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:304]
+WARNING: [Synth 8-87] always_comb on 'read_sel_reg' did not result in combinational logic [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:298]
+INFO: [Synth 8-6155] done synthesizing module 'sevenSegmentLogic' (12#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:261]
+INFO: [Synth 8-6155] done synthesizing module 'main' (13#1) [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:423]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 766.117 ; gain = 241.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 766.117 ; gain = 241.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 766.117 ; gain = 241.172
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/xilinx/xup/project_1/project_1.srcs/constrs_1/imports/constrs_1/Basys3.xdc]
+Finished Parsing XDC File [D:/xilinx/xup/project_1/project_1.srcs/constrs_1/imports/constrs_1/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/xilinx/xup/project_1/project_1.srcs/constrs_1/imports/constrs_1/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 889.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 889.531 ; gain = 364.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 889.531 ; gain = 364.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 889.531 ; gain = 364.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sevenSegmentLogic'
+INFO: [Synth 8-5544] ROM "r_a_1_ld" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'i_clr_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:203]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   start |                           000001 |                              000
+                   clear |                           000010 |                              001
+                 compare |                           000100 |                              010
+                     sum |                           001000 |                              011
+              complement |                           010000 |                              100
+                  inform |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'controller'
+WARNING: [Synth 8-327] inferring latch for variable 'i_ld_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:203]
+WARNING: [Synth 8-327] inferring latch for variable 'checksum_ld_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:205]
+WARNING: [Synth 8-327] inferring latch for variable 'r_e_0_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:207]
+WARNING: [Synth 8-327] inferring latch for variable 'over_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:207]
+WARNING: [Synth 8-327] inferring latch for variable 'r_e_1_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:321]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                             0000 |                             0000
+                 en_read |                             0001 |                             0011
+               read_data |                             0010 |                             0100
+                    disp |                             0011 |                             0101
+                 inc_r_a |                             0100 |                             0001
+                 dec_r_a |                             0101 |                             0010
+                read_ctr |                             0110 |                             1001
+                disp_ctr |                             0111 |                             1010
+                 wait_dp |                             1000 |                             0110
+               read_csum |                             1001 |                             0111
+               disp_csum |                             1010 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sevenSegmentLogic'
+WARNING: [Synth 8-327] inferring latch for variable 'r_a_1_ld_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:292]
+WARNING: [Synth 8-327] inferring latch for variable 'in_ld_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:287]
+WARNING: [Synth 8-327] inferring latch for variable 'ten_clr_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:309]
+WARNING: [Synth 8-327] inferring latch for variable 'ten_ld_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:309]
+WARNING: [Synth 8-327] inferring latch for variable 'read_sel_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:298]
+WARNING: [Synth 8-327] inferring latch for variable 'in_sel_reg' [D:/xilinx/xup/project_1/project_1.srcs/sources_1/imports/sources_1/main.sv:304]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:51 . Memory (MB): peak = 889.531 ; gain = 364.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 21    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 16    
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 12    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  24 Input      4 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 35    
+	   6 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module downCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module clockDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module buttonDebouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+Module register__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module upCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+Module register__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module upCounter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module regFile 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 18    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 34    
+Module SevSeg_4digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module register__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module upCounter__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module sevenSegmentLogic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Muxes : 
+	  24 Input      4 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design main has port dp driven by constant 1
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\regFile1/state_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\divide1/state_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 889.531 ; gain = 364.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+-------------------------+---------------+----------------+
+|Module Name   | RTL Object              | Depth x Width | Implemented As | 
++--------------+-------------------------+---------------+----------------+
+|SevSeg_4digit | sseg_LEDs               | 32x7          | LUT            | 
+|main          | displayScreen/sseg_LEDs | 32x7          | LUT            | 
++--------------+-------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 889.531 ; gain = 364.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:12 . Memory (MB): peak = 891.531 ; gain = 366.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:13 . Memory (MB): peak = 891.531 ; gain = 366.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:01:18 . Memory (MB): peak = 905.105 ; gain = 380.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:01:18 . Memory (MB): peak = 905.105 ; gain = 380.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:18 . Memory (MB): peak = 905.105 ; gain = 380.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:18 . Memory (MB): peak = 905.105 ; gain = 380.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:18 . Memory (MB): peak = 905.105 ; gain = 380.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:18 . Memory (MB): peak = 905.105 ; gain = 380.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    23|
+|3     |LUT1   |     9|
+|4     |LUT2   |    26|
+|5     |LUT3   |    11|
+|6     |LUT4   |    36|
+|7     |LUT5   |    60|
+|8     |LUT6   |   107|
+|9     |MUXF7  |    33|
+|10    |MUXF8  |    16|
+|11    |FDRE   |   294|
+|12    |LD     |    14|
+|13    |IBUF   |    18|
+|14    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------------------------+------+
+|      |Instance          |Module                      |Cells |
++------+------------------+----------------------------+------+
+|1     |top               |                            |   673|
+|2     |  controller1     |controller                  |    15|
+|3     |  datapath1       |datapath                    |    61|
+|4     |    checksum_reg1 |register__parameterized1    |     8|
+|5     |    ctr1          |upCounter__parameterized0   |    17|
+|6     |      reg1_N      |register__parameterized1_10 |    17|
+|7     |    iCtr1         |upCounter                   |    11|
+|8     |      reg1_N      |register__parameterized0_9  |    11|
+|9     |    sum_reg1      |register__parameterized1_8  |    23|
+|10    |  dbncer1         |buttonDebouncer             |    20|
+|11    |  dbncer2         |buttonDebouncer_0           |     6|
+|12    |  dbncer3         |buttonDebouncer_1           |     5|
+|13    |  dbncer4         |buttonDebouncer_2           |     5|
+|14    |  dbncer5         |buttonDebouncer_3           |     5|
+|15    |  displayLogic    |sevenSegmentLogic           |   145|
+|16    |    in_reg0       |register__parameterized0    |     9|
+|17    |    in_reg1       |register__parameterized0_4  |     8|
+|18    |    in_reg2       |register__parameterized0_5  |     4|
+|19    |    in_reg3       |register__parameterized0_6  |    17|
+|20    |    r_a_1_reg0    |register__parameterized2    |    14|
+|21    |    ten_ctr1      |upCounter__parameterized1   |    63|
+|22    |      reg1_N      |register_7                  |    63|
+|23    |  displayScreen   |SevSeg_4digit               |    28|
+|24    |  divide1         |clockDivider                |    82|
+|25    |    clockDivider  |downCounter                 |    82|
+|26    |      reg1_N      |register                    |    82|
+|27    |  regFile1        |regFile                     |   257|
++------+------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:18 . Memory (MB): peak = 905.105 ; gain = 380.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:01:04 . Memory (MB): peak = 905.105 ; gain = 256.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:18 . Memory (MB): peak = 905.105 ; gain = 380.160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 913.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  LD => LDCE: 14 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:34 . Memory (MB): peak = 913.094 ; gain = 616.824
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 913.094 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx/xup/project_1/project_1.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 11:39:37 2020...
