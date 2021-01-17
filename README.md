@@ -1,2 +1,2 @@
 # Digital-Design-Labs
-My Freshman &amp; Junior year Digital Design labs
+My Freshman & Junior year CS223, digital design, labs.
